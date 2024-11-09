@@ -22,6 +22,12 @@ export default function TransactionForm() {
     }
   }, [publicKey]);
 
+  useEffect(() => {
+    if(amount < 0) {
+      setAmount(0);
+    }
+  }, [amount]);
+
   return (
     <>
       {walletConnected ? (
@@ -47,6 +53,8 @@ export default function TransactionForm() {
                 console.error(e);
               }
             }}
+
+            disabled={amount <= 0 || !recipient}
           >
             Send
           </button>

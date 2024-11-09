@@ -16,11 +16,11 @@ const Home: NextPage = (props) => {
       </Head>
       <WalletContextProvider>
         <AppBar />
-        <Link href={"/"} style={{ color: "red" }}>
-          Click here to Ping the program
+        <Link href={"/"}>
+          <p style={{ color: "red", cursor: "pointer", textDecoration: "underline" }}>Click here to Ping program</p>
         </Link>
         <div className={styles.AppBody}>
-            <TransactionForm />
+          <TransactionForm />
         </div>
       </WalletContextProvider>
     </div>
