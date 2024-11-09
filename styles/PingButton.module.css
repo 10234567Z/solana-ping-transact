@@ -1,0 +1,35 @@
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: middle;
+  align-items: center;
+}
+
+.button {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttonDisabled {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+  cursor: not-allowed;
+  padding: 15px;
+  border-radius: 7px;
+  border: red 2px solid;
+  color: black;
+}
+
+.result {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
