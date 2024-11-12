@@ -1,13 +1,13 @@
 import { NextPage } from "next";
 import styles from "../styles/Home.module.css";
-import { AppBar } from "../components/AppBar";
-import Head from "next/head";
-import { PingButton } from "../components/PingButton";
-import WalletContextProvider from "../components/WalletContextProvider";
-import Link from "next/link";
-import TransactionForm from "../components/TransactionForm";
 
-const Home: NextPage = (props) => {
+import Head from "next/head";
+import WalletContextProvider from "../components/WalletContextProvider";
+import { AppBar } from "../components/AppBar";
+import Link from "next/link";
+import MintTokens from "../components/MintTokens";
+
+const Home: NextPage = () => {
   return (
     <div className={styles.App}>
       <Head>
@@ -17,7 +17,7 @@ const Home: NextPage = (props) => {
       <WalletContextProvider>
         <AppBar />
         <div className={styles.AppBody}>
-          <TransactionForm />
+          <MintTokens />
         </div>
       </WalletContextProvider>
     </div>

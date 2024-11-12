@@ -72,7 +72,7 @@ export default function TransactionForm() {
         </div>
       ) : (
         <div>
-          <h1>Connect Wallet to Send Transaction</h1>
+          <h2>Connect Wallet to Send Transaction</h2>
         </div>
       )}
     </>

@@ -10,7 +10,7 @@ const WalletContextProvider: FC<{children: ReactNode}> = ({children}) => {
 
     
     const endpoint = clusterApiUrl("devnet");
-    const wallets = [new PhantomWalletAdapter()];
+    const wallets = useMemo(() => [], []);
     return (
         <ConnectionProvider endpoint={endpoint}>
             <WalletProvider wallets={wallets}>

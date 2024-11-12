@@ -15,9 +15,6 @@ const Home: NextPage = (props) => {
       </Head>
       <WalletContextProvider>
         <AppBar />
-        <Link href={"/transact"}>
-          <p style={{color: "red" , cursor: "pointer", textDecoration: "underline"}}>Click here to Transact SOLs</p>
-        </Link>
         <div className={styles.AppBody}>
           <PingButton />
         </div>
